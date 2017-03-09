@@ -1,0 +1,12 @@
+<template name="addMessage">
+    <form action="">
+        <div class="message_input_wrapper {{ isDisabled currentUser 'hidden' }}"><input class="message_input"   name="username" id="username" value="{{ currentUser.username }}"
+                                                  placeholder="Username ...">
+        </div>
+        <div class="message_input_wrapper"><input autocomplete="off" class="message_input" name="content" id="content" placeholder="Type your message here..."></div>
+        <button type="submit" class="send_message">
+            <i class="icon"></i>
+            <span>Send</span>
+        </button>
+    </form>
+</template>

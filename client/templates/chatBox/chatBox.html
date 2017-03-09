@@ -1,0 +1,18 @@
+<template name="chatBox">
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div id="logout" class="button close" title="disconnect"></div>
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+            </div>
+            <div class="title">Chat</div>
+        </div>
+        <ul class="messages">
+            {{>showMessages}}
+        </ul>
+        <div class="bottom_wrapper clearfix">
+            {{>addMessage}}
+        </div>
+    </div>
+</template>

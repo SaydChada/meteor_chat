@@ -1,0 +1,12 @@
+<template name="showMessages">
+    {{#each msg in getMessages }}
+        <li class="message left">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"> [{{ formatDate msg.date  }}] <strong>{{ msg.username }} </strong> : {{ msg.content }}</div>
+            </div>
+        </li>
+    {{/each}}
+</template>
+
+

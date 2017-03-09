@@ -1,0 +1,16 @@
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<hr>
+
+{{#if currentUser }}
+    {{> chatBox }}
+{{else}}
+    {{> loginBox }}
+{{/if}}
+
+</body>
